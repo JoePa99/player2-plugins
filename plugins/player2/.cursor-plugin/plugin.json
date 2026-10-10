@@ -1,0 +1,23 @@
+{
+  "name": "player2",
+  "displayName": "Player 2",
+  "version": "1.0.0",
+  "description": "Your company's companyOS, skills and brand from Player 2: answers and work grounded in how your company runs, finished work and follow-ups saved back to Player 2, companyOS changes suggested for an admin, and bots Player 2 suggests setting up.",
+  "author": {
+    "name": "upupdndn",
+    "email": "hello@upupdndn.ai",
+    "url": "https://upupdndn.ai"
+  },
+  "homepage": "https://player2.si",
+  "license": "Proprietary",
+  "keywords": [
+    "player2",
+    "companyos",
+    "company",
+    "brand",
+    "skills",
+    "knowledge",
+    "grok-bot"
+  ],
+  "logo": "assets/icon.png"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "player2",
+  "owner": {
+    "name": "upupdndn",
+    "email": "hello@upupdndn.ai"
+  },
+  "metadata": {
+    "description": "Player 2 for Grok Bot and Cursor",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "player2",
+      "source": "./plugins/player2",
+      "description": "Your company's companyOS, skills and brand from Player 2: answers and work grounded in how your company runs, finished work and follow-ups saved back to Player 2, companyOS changes suggested for an admin, and bots Player 2 suggests setting up."
+    }
+  ]
+}
