@@ -1,6 +1,6 @@
 ---
 name: player2-bots
-description: "Use when the person asks what bots or routines to set up for their company, says yes to a bot Player 2 suggested, or asks to set up Player 2. Turns Player 2's bot suggestions into a running bot: its name, job, instructions drawn from the companyOS, the company's skills, its schedule and the connectors it needs."
+description: "Use when the person asks what bots or routines to set up for their company, says yes to a bot Player 2 suggested, or asks to set up Player 2. Turns Player 2's bot suggestions into a running bot: its name, job, instructions drawn from the companyOS, the company's team and skills, its schedule and the connectors it needs."
 ---
 
 # Bots from Player 2
@@ -23,7 +23,7 @@ Show the person the ones that fit, in a line each, and ask which they want. Neve
 
 After their yes:
 
-1. Create the bot with the suggested name. Its instructions are the suggested ones; keep the lines that tell it to read the companyOS, follow the named skill and save its output back to Player 2.
+1. Create the bot with the suggested name. Its instructions are the suggested ones; keep the lines that tell it to read the companyOS and follow the named skill.
 2. Add the routine on the suggested schedule, in the person's time zone. Ask if the schedule isn't clear.
 3. Check the connectors it needs are installed. If one isn't, tell the person which and stop there: they add it themselves.
 4. Run it once now, so the person sees what it does, and show them the result.
@@ -33,6 +33,6 @@ If the person says no to one, call `player2_suggestion` with `action: "not_usefu
 
 ## Every bot's run
 
-Every bot set up from Player 2 follows the `player2` skill: read the companyOS first, use the company's skill for the work, stay on brand, save finished work with `work_save`, put follow-ups on the Tasks page with `task_add`, and suggest companyOS changes it finds (`unattended: true`) for an admin to decide. Nothing is sent, posted, paid or deleted without the person's yes: a bot drafts, the person sends.
+Every bot set up from Player 2 follows the `player2` skill: read the companyOS first, use the skill of the teammate whose work it is (`team_list`, `teammate_read`, `skill_read`), stay on brand, save its report with `work_save` only when that report is what the person will read, put real follow-ups on the Tasks page with `task_add`, and suggest companyOS changes it finds (`unattended: true`) for an admin to decide. A bot never adds or suggests a teammate; that waits for the person. Nothing is sent, posted, paid or deleted without the person's yes: a bot drafts, the person sends.
 
 Connectors and sign-ins are shared by every bot on the person's account, so a bot set up for one company can reach the others on their Player 2 connection. Give each bot one company in its instructions, and keep its work in that company.
